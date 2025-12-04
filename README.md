@@ -48,7 +48,6 @@ I build **high-performance systems** for games and engines using **modern C++**,
 ---
 
 # 🚀 Featured Projects  
-> **Stable, badge-style repo cards (never break).**
 
 ### ⚡ Velox  
 A foundational engine-level module framework.  

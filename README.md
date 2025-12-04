@@ -3,117 +3,112 @@
 <h3 align="center">C++ Developer • UE5 Gameplay Systems • AI & Engine Programming</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00A3FF&center=true&vCenter=true&width=600&lines=Gameplay+Systems+Engineer;AI+%26+Engine+Development;Physics+%26+Linear+Algebra+Enthusiast;Unreal+Engine+Developer;Building+Velox+Locomotion+System" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00A3FF&center=true&vCenter=true&width=700&lines=Gameplay+Systems+Engineer;AI+%26+Engine+Development;Physics+%26+Linear+Algebra+Enthusiast;Unreal+Engine+Developer;Building+Velox+Systems" />
 </p>
 
 ---
 
-## 🧩 About Me
-I build **high-performance systems** for games and engines using **modern C++**, **Unreal Engine**, and strong **mathematical foundations** such as linear algebra and physics simulation.
+# 🧩 About Me
+I build **high-performance systems** for games and engines using **modern C++**, **Unreal Engine**, and strong **mathematical foundations** like linear algebra & physics simulation.
 
-Focus Areas:
-- Procedural + physics-driven **locomotion systems**
-- Modular **AI frameworks** for gameplay agents
-- **Engine-level** C++ systems & optimization
-- Custom **math/physics utilities** for simulations
-
----
-
-## 🛠 Tech Stack
-
-### Core Skills  
-<p>
-  <img src="https://skillicons.dev/icons?i=cpp" />
-</p>
-
-### Engines & Frameworks  
-<p>
-  <img src="https://skillicons.dev/icons?i=unreal" />
-</p>
-
-### Tools  
-<p>
-  <img src="https://skillicons.dev/icons?i=git,cmake" />
-  <img height="48" src="https://vectorlogo.zone/logos/premake/premake-icon.svg" />
-</p>
+**Focus Areas**
+- Procedural + physics-driven **locomotion systems**  
+- Modular & scalable **AI frameworks**  
+- Engine-level **C++ systems** & optimization  
+- Low-level **math & physics utilities** for simulations  
+- **OOPs**, **DOP (data-oriented programming)** & **ECS (entity-component-system)** design patterns for performant gameplay systems
 
 ---
 
-## 🚀 Featured Projects (Pinned)
+# 🛠 Tech Stack
+
+### Core Languages  
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=cplusplus&logoColor=white)
+
+### Engines / Frameworks  
+![Unreal](https://img.shields.io/badge/Unreal%20Engine-313131?style=flat&logo=unrealengine&logoColor=white)
+
+### Concepts & Paradigms
+<img alt="OOP" src="https://img.shields.io/badge/OOPs-007ACC?style=flat" />
+<img alt="DOP" src="https://img.shields.io/badge/DOP-00A86B?style=flat" />
+<img alt="ECS" src="https://img.shields.io/badge/ECS-8A2BE2?style=flat" />
+
+### Graphics / Low-Level / Rendering  
+![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=flat&logo=opengl&logoColor=white)
+![GLFW](https://img.shields.io/badge/GLFW-2C2C2C?style=flat)
+![glad](https://img.shields.io/badge/glad-3C3F41?style=flat)
+![raylib](https://img.shields.io/badge/raylib-1E78C7?style=flat)
+![ImGui](https://img.shields.io/badge/ImGui-000000?style=flat)
+
+### Tools / Build Systems  
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white)
+![Premake](https://img.shields.io/badge/Premake-2B2B2B?style=flat)
+
+---
+
+# 🚀 Featured Projects  
+> **Stable, badge-style repo cards (never break).**
 
 ### ⚡ Velox  
-High-performance engine-level module repository.  
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=Velox&theme=transparent&hide_border=true)](https://github.com/1SHAMAY1/Velox)
+A foundational engine-level module framework.  
+[![Velox](https://img.shields.io/badge/Velox-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/Velox)
 
 ---
 
-### 🦾 Plugin: Character Locomotion System  
-Advanced locomotion plugin for UE5 (vaulting, climbing, wall-run, dash, mantle, etc.).  
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=Plugin-CharacterLocomotionSystem&theme=transparent&hide_border=true)](https://github.com/1SHAMAY1/Plugin-CharacterLocomotionSystem)
+### 🦾 Character Locomotion System  
+Advanced UE5 locomotion plugin (vaulting, climbing, wall-run, mantling, etc.)  
+[![CLS](https://img.shields.io/badge/Character_Locomotion_System-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/Plugin-CharacterLocomotionSystem)
 
 ---
 
-### 🎥 Plugin: Enhanced Camera System  
-Dynamic, modular camera framework with runtime switching.  
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=Plugin-EnhancedCameraSystem&theme=transparent&hide_border=true)](https://github.com/1SHAMAY1/Plugin-EnhancedCameraSystem)
+### 🎥 Enhanced Camera System  
+Modular cinematic & gameplay camera system for UE5.  
+[![ECS](https://img.shields.io/badge/Enhanced_Camera_System-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/Plugin-EnhancedCameraSystem)
 
 ---
 
 ### 📘 Customizable Logger  
-Flexible, engine-friendly logging system in C++.  
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=Customizable_Logger&theme=transparent&hide_border=true)](https://github.com/1SHAMAY1/Customizable_Logger)
+High-performance C++ logging utility.  
+[![Logger](https://img.shields.io/badge/Customizable_Logger-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/Customizable_Logger)
 
 ---
 
 ### 📚 DSA Utility  
-Lightweight data-structures & algorithms toolkit for engine integration.  
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=DSAUtility&theme=transparent&hide_border=true)](https://github.com/1SHAMAY1/DSAUtility)
+Engine-optimized data structures & algorithms library.  
+[![DSAUtility](https://img.shields.io/badge/DSA_Utility-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/DSAUtility)
 
 ---
 
-## 📊 GitHub Stats & Badges
+# 📊 GitHub Stats & Badges (Unbreakable)
 
 <p align="center">
-  <!-- Simple, reliable badges (shields.io) -->
-  <a href="https://github.com/1SHAMAY1">
-    <img alt="GitHub followers" src="https://img.shields.io/github/followers/1SHAMAY1?label=Followers&style=social" />
-  </a>
-  <a href="https://github.com/1SHAMAY1?tab=stars">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/1SHAMAY1?label=Stars&style=social" />
-  </a>
-  <a href="https://github.com/1SHAMAY1">
-    <img alt="Profile views" src="https://komarev.com/ghpvc/?username=1SHAMAY1&color=blue" />
-  </a>
+  <img alt="Followers" src="https://img.shields.io/github/followers/1SHAMAY1?label=Followers&style=social" />
+  <img alt="Stars" src="https://img.shields.io/github/stars/1SHAMAY1?label=Stars&style=social" />
+  <img alt="Views" src="https://komarev.com/ghpvc/?username=1SHAMAY1&color=blue" />
 </p>
 
-<p align="center">
-  <!-- Pinned repos (keeps your project cards) -->
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=Velox&theme=transparent&hide_border=true" alt="Velox" />
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=Plugin-CharacterLocomotionSystem&theme=transparent&hide_border=true" alt="Locomotion" />
-</p>
-
-<!-- Optional plain text fallback to show top language if dynamic graphic fails -->
-**Top languages:** C++ • HLSL • GLSL
-
+**Top languages:**  
+C++ • HLSL • GLSL  
 
 ---
 
-## 🎯 What I'm Building
-- **Velox Core / Systems** — foundational engine-level modules  
-- **Character Locomotion System** — procedural + physics-driven movement  
-- **Enhanced Camera System** — runtime camera modes & cinematics  
-- **Customizable Logger & DSA Utility** — performance-focused systems for UE & C++  
-- **AI Engine + Math Utilities** — experimental simulation & math layers  
+# 🎯 What I'm Building
+- **Velox Engine Modules** – reusable base for engine-level systems (ECS-driven)  
+- **Character Locomotion System** – procedural + physics-based movement (DOP + physics sim)  
+- **Enhanced Camera System** – runtime camera modes & cinematic pipelines  
+- **C++ Tools** – logging, DSA, math utilities  
+- **Experimental AI & Physics Engine Work** (OOPs & data-oriented hybrids)
 
 ---
 
-## 🔗 Connect
+# 🔗 Connect  
 <p>
-  <a href="https://linkedin.com/in/your-link-here">
-    <img src="https://skillicons.dev/icons?i=linkedin" />
+  <a href="[https://linkedin.com/in/your-link-here](https://www.linkedin.com/in/shankharaj-datta-45921a28a/)" target="_blank">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
   </a>
 </p>
 
 ---
 
-<h3 align="center">⭐ If you enjoy my work, feel free to star a repository!</h3>
+<h3 align="center">⭐ If you like my work, consider starring a repository!</h3>

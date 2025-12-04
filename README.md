@@ -104,7 +104,7 @@ C++ • HLSL • GLSL
 
 # 🔗 Connect  
 <p>
-  <a href="https://linkedin.com/in/https://www.linkedin.com/in/shankharaj-datta-45921a28a/" target="_blank">
+  <a href="https://www.linkedin.com/in/shankharaj-datta-45921a28a/" target="_blank">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" />
   </a>
 </p>

@@ -71,16 +71,30 @@ Lightweight data-structures & algorithms toolkit for engine integration.
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Stats & Badges
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=1SHAMAY1&show_icons=true&theme=transparent&hide_border=true" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=1SHAMAY1&layout=compact&theme=transparent&hide_border=true" />
+  <!-- Simple, reliable badges (shields.io) -->
+  <a href="https://github.com/1SHAMAY1">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/1SHAMAY1?label=Followers&style=social" />
+  </a>
+  <a href="https://github.com/1SHAMAY1?tab=stars">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/1SHAMAY1?label=Stars&style=social" />
+  </a>
+  <a href="https://github.com/1SHAMAY1">
+    <img alt="Profile views" src="https://komarev.com/ghpvc/?username=1SHAMAY1&color=blue" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=1SHAMAY1&theme=transparent&hide_border=true" />
+  <!-- Pinned repos (keeps your project cards) -->
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=Velox&theme=transparent&hide_border=true" alt="Velox" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=1SHAMAY1&repo=Plugin-CharacterLocomotionSystem&theme=transparent&hide_border=true" alt="Locomotion" />
 </p>
+
+<!-- Optional plain text fallback to show top language if dynamic graphic fails -->
+**Top languages:** C++ • HLSL • GLSL
+
 
 ---
 

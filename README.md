@@ -50,8 +50,16 @@ I build **high-performance systems** for games and engines using **modern C++**,
 # 🚀 Featured Projects  
 
 ### ⚡ Velox  
-A foundational engine-level module framework.  
+A foundational engine-level module framework with **2D physics engine** capabilities.  
 [![Velox](https://img.shields.io/badge/Velox-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/Velox)
+
+**Key Features:**
+- **2D Physics Engine** – Collision detection (AABB, Circle, SAT), rigid body dynamics, impulse resolution
+- **ECS Architecture** – Entity-Component-System for scalable gameplay systems
+- **Custom Math Library** – Optimized vector/matrix operations, linear algebra utilities
+- **Constraint Solvers** – Joint constraints, distance constraints, spring systems
+- **Spatial Partitioning** – Quad-tree implementation for efficient collision broad-phase
+- **Rendering Pipeline** – Raylib-based 2D rendering with debug visualization
 
 ---
 
@@ -74,8 +82,37 @@ High-performance C++ logging utility.
 ---
 
 ### 📚 DSA Utility  
-Engine-optimized data structures & algorithms library.  
+Engine-optimized **data structures & algorithms library** with production-ready implementations.  
 [![DSAUtility](https://img.shields.io/badge/DSA_Utility-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/DSAUtility)
+
+**Sorting Algorithms:**
+- **Bubble Sort** – Simple comparison-based sorting (`O(n²)`)
+- **Selection Sort** – In-place comparison sort (`O(n²)`)
+- **Insertion Sort** – Efficient for small/partially sorted data (`O(n²)`)
+- **Merge Sort** – Divide-and-conquer stable sort (`O(n log n)`)
+- **Quick Sort** – Fast in-place partitioning sort (`O(n log n)` avg)
+- **Heap Sort** – Binary heap-based sort (`O(n log n)`)
+- **Counting Sort** – Integer sorting with linear time (`O(n+k)`)
+- **Radix Sort** – Non-comparative digit-based sort (`O(d·n)`)
+- **Bucket Sort** – Distribution-based sorting (`O(n+k)`)
+
+**Data Structures:**
+- **Singly Linked List (LL)** – Linear collection with forward traversal
+- **Doubly Linked List (DLL)** – Bidirectional traversal support
+- **Circular Linked List (CLL)** – Circular reference structure
+- **Stack** – LIFO (Last-In-First-Out) container
+- **Queue** – FIFO (First-In-First-Out) container
+- **Deque** – Double-ended queue
+- **Binary Tree** – Hierarchical tree structure
+- **Binary Search Tree (BST)** – Ordered binary tree
+- **AVL Tree** – Self-balancing BST
+- **Red-Black Tree** – Balanced search tree
+- **Heap (Min/Max)** – Priority queue implementation
+- **Trie** – Prefix tree for string operations
+- **Graph** – Adjacency list/matrix representations
+- **Hash Table** – Key-value mapping with collision handling
+- **Disjoint Set (Union-Find)** – Connected component tracking
+
 
 ---
 

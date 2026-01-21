@@ -82,36 +82,17 @@ High-performance C++ logging utility.
 ---
 
 ### 📚 DSA Utility  
-Engine-optimized **data structures & algorithms library** with production-ready implementations.  
+**Header-only C++17 library** for Data Structures and Algorithms with extensive template support.  
 [![DSAUtility](https://img.shields.io/badge/DSA_Utility-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/DSAUtility)
+[![C++17](https://img.shields.io/badge/Stack-C%2B%2B17-blue?style=flat-square)](https://isocpp.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/license/mit)
 
-**Sorting Algorithms:**
-- **Bubble Sort** – Simple comparison-based sorting (`O(n²)`)
-- **Selection Sort** – In-place comparison sort (`O(n²)`)
-- **Insertion Sort** – Efficient for small/partially sorted data (`O(n²)`)
-- **Merge Sort** – Divide-and-conquer stable sort (`O(n log n)`)
-- **Quick Sort** – Fast in-place partitioning sort (`O(n log n)` avg)
-- **Heap Sort** – Binary heap-based sort (`O(n log n)`)
-- **Counting Sort** – Integer sorting with linear time (`O(n+k)`)
-- **Radix Sort** – Non-comparative digit-based sort (`O(d·n)`)
-- **Bucket Sort** – Distribution-based sorting (`O(n+k)`)
-
-**Data Structures:**
-- **Singly Linked List (LL)** – Linear collection with forward traversal
-- **Doubly Linked List (DLL)** – Bidirectional traversal support
-- **Circular Linked List (CLL)** – Circular reference structure
-- **Stack** – LIFO (Last-In-First-Out) container
-- **Queue** – FIFO (First-In-First-Out) container
-- **Deque** – Double-ended queue
-- **Binary Tree** – Hierarchical tree structure
-- **Binary Search Tree (BST)** – Ordered binary tree
-- **AVL Tree** – Self-balancing BST
-- **Red-Black Tree** – Balanced search tree
-- **Heap (Min/Max)** – Priority queue implementation
-- **Trie** – Prefix tree for string operations
-- **Graph** – Adjacency list/matrix representations
-- **Hash Table** – Key-value mapping with collision handling
-- **Disjoint Set (Union-Find)** – Connected component tracking
+**Core Features:**
+- **Header-Only Architecture** – Easy integration with generic `DSAUtility.hpp`
+- **Modern C++17** – Uses `std::optional`, `constexpr`, and template metaprogramming
+- **Algorithm Suite** – QuickSort, MergeSort, HeapSort, RadixSort, IntroSort, ShellSort
+- **Data Structures** – AVL Trees, Red-Black Trees, Tries, Graphs (MST/Shortest Path), Circular Queues
+- **Utilities** – High-precision `Timer`, `Logger`, and Comparator helpers for benchmarking
 
 
 ---

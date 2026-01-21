@@ -50,16 +50,17 @@ I build **high-performance systems** for games and engines using **modern C++**,
 # 🚀 Featured Projects  
 
 ### ⚡ Velox  
-A foundational engine-level module framework with **2D physics engine** capabilities.  
+### ⚡ Velox  
+**High-performance 2D physics engine** with Data-Oriented Design (ECS) and XPBD solver.  
 [![Velox](https://img.shields.io/badge/Velox-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/Velox)
 
-**Key Features:**
-- **2D Physics Engine** – Collision detection (AABB, Circle, SAT), rigid body dynamics, impulse resolution
-- **ECS Architecture** – Entity-Component-System for scalable gameplay systems
-- **Custom Math Library** – Optimized vector/matrix operations, linear algebra utilities
-- **Constraint Solvers** – Joint constraints, distance constraints, spring systems
-- **Spatial Partitioning** – Quad-tree implementation for efficient collision broad-phase
-- **Rendering Pipeline** – Raylib-based 2D rendering with debug visualization
+**Core Features:**
+- **Data-Oriented ECS** – Custom architecture optimized for CPU cache locality (Arrays over Pointers)
+- **XPBD Solver** – Extended Position Based Dynamics for stability in stacking and stiff constraints
+- **Broadphase Optimization** – Spatial Hashing Grid (60x60 cells) reducing complexity to `O(N)`
+- **Modular Logic** – Decoupled behaviors (Force Fields, Oscillators, Projectiles)
+- **Portable C-API** – Zero-friction integration with other languages/engines
+- **Visualizer** – Raylib-powered real-time demo environment
 
 ---
 

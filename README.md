@@ -48,8 +48,7 @@ I build **high-performance systems** for games and engines using **modern C++**,
 ---
 
 # 🚀 Featured Projects  
-
-### ⚡ Velox  
+  
 ### ⚡ Velox  
 **High-performance 2D physics engine** with Data-Oriented Design (ECS) and XPBD solver.  
 [![Velox](https://img.shields.io/badge/Velox-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/Velox)

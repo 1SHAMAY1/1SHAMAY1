@@ -36,6 +36,7 @@ I design and implement **high-performance systems** across the entire stack—ra
 ### Frameworks & Engines  
 ![Unreal Engine 5](https://img.shields.io/badge/Unreal_Engine_5-313131?style=flat&logo=unrealengine&logoColor=white)
 ![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=flat&logo=opengl&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat&logo=nvidia&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![Raylib](https://img.shields.io/badge/Raylib-1E78C7?style=flat)
 

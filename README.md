@@ -56,11 +56,10 @@ I design and implement **high-performance systems** across the entire stack—ra
 **Apple M-Series style Unified Memory Architecture (UMA) SoC Interconnect** designed in synthesizable SystemVerilog.  
 [![UMA SoC](https://img.shields.io/badge/UMA_SoC_Interconnect-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/UMA_SoC_Interconnect)
 
-- **2x1 AXI4 Crossbar** – Custom Network-on-Chip (NoC) router arbitrating between CPU (M0) and GPU (M1) bus masters.
-- **Fixed-Priority Arbitration** – Real-time priority arbiter guaranteeing high-bandwidth GPU access over CPU.
-- **Transaction Routing** – Uses AXI transaction IDs (`s0_bid` / `s0_rid`) to route responses back to the correct initiator without bus stalls.
-- **Wide UMA Memory Controller** – Connected to a 256-bit wide data bus to maximize throughput to a shared SRAM segment.
-- **Gate-Level Synthesis** – Compiles via Yosys with full schematic generation mapping multiplexers and logic blocks.
+- **System Topology (`uma_soc_top`)** – Integrates a 2x1 AXI4 Crossbar (`axi4_crossbar`) with a Unified Memory Controller (`axi4_uma_controller`) supporting 32-bit addresses and 256-bit wide data channels.
+- **Fixed-Priority Arbitration** – Implements a custom arbiter granting immediate memory channel access to the GPU master (`M1`) over the CPU master (`M0`) to guarantee high-bandwidth execution.
+- **Transaction ID Routing** – Safely multiplexes Read/Write channels and routes responses (`bid` / `rid`) to the correct master using AXI transaction IDs (`ID_WIDTH = 4`), mapping CPU to `4'h1` and GPU to `4'h2`.
+- **AXI4 Memory Controller (`axi4_uma_controller`)** – Implements a slave interface mapping 256-bit wide AXI read/write burst transactions (`s_axi_awburst = 2'b01`, `s_axi_awsize = 3'b101`) directly to a simulated shared HBM/DRAM static memory array.
 
 ---
 
@@ -68,10 +67,10 @@ I design and implement **high-performance systems** across the entire stack—ra
 **SIMT GPU Streaming Multiprocessor (SM)** integrated with a dedicated **Ray-Tracing Compute Unit (RTCU)**.  
 [![GPU Core](https://img.shields.io/badge/GPU_Compute_Core-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/GPU_Compute_Core)
 
-- **SIMT Architecture** – 32-lane vector streaming multiprocessor managing execution masks across a parallel warp.
-- **Ray-Tracing Co-processor** – Dedicated hardware block executing parallel Bounding Volume Hierarchy (BVH) node traversals and Möller-Trumbore ray-triangle intersections.
-- **Custom Graphics ISA** – Custom instruction decoder dispatching ray-tracing operations directly to the RTCU over a 1024-bit packed vector bus.
-- **Architectural Simulator** – Cycle-accurate Python model (`gpu_sim.py`) that functionalizes camera ray generation and path-traces scenes.
+- **Top-Level Wrapper (`gpu_top`)** – Connects the SIMT processing core (`gpu_sm_core`) to the custom hardware Ray-Tracing pipeline (`rtcu_core`).
+- **SIMT Core Pipeline (`gpu_sm_core`)** – Execution core processing 32-lane warps (`WARP_SIZE = 32`) with a Vector Register File (`vrf`) managing 256 registers per thread. Opcode `7'h7B` dispatches ray tasks.
+- **Ray-Tracing Co-processor (`rtcu_core`)** – Synthesizable hardware accelerator executing parallel Ray-Box and Ray-Triangle intersections. Implements FSM traversals (`FETCH_BVH`, `INT_BOX`, `FETCH_TRI`, `INT_TRI`) per warp lane.
+- **Unified Memory Port** – Features a dedicated 256-bit wide read bus (`mem_read_data`) allowing the `rtcu_core` to directly fetch BVH nodes and triangles from memory, returning intersection results (`hit_valid`, `hit_distance`, and barycentrics) back to the SM.
 
 ---
 
@@ -79,10 +78,9 @@ I design and implement **high-performance systems** across the entire stack—ra
 **Bare-metal C GPU device driver** engineered to interface a CPU application with the GPU Compute Core over a Unified Memory Interconnect.  
 [![Graphics Driver](https://img.shields.io/badge/Graphics_Driver_API-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/Graphics_Driver_API)
 
-- **Command Ring Buffer** – Non-blocking, circular command queue allowing asynchronous graphics task submissions from CPU to GPU.
-- **MMIO Doorbell Signaling** – Directly triggers hardware execution by writing CPU-written ring indexes to Memory-Mapped I/O registers.
-- **Zero-Copy Memory Allocations** – Utilizes a shared UMA heap allocation (`uma_alloc`) to pass raw pointers directly to the GPU, bypassing expensive PCIe bus transfers.
-- **Silicon Verification Test** – Standalone testing framework verifying physical queue operations and doorbell interrupts.
+- **Command Ring Buffer (`gpu_cmd_ring_t`)** – Manages asynchronous GPU commands through a 32-byte aligned circular queue queueing up to 256 entries in unified memory at `0x40000000`.
+- **MMIO Register Map** – Maps physical registers starting at `GPU_MMIO_BASE = 0x80000000` (Doorbell: `+0x00`, Status: `+0x04`, Ring Addr: `+0x08`, Head: `+0x0C`, Tail: `+0x10`) to control hardware FSMs.
+- **API Routines** – Implements driver initialization (`gpu_init`), command buffer dispatch (`gpu_push_command`), host doorbell signaling (`gpu_ring_doorbell`), and Ray-Tracing kernel dispatches (`gpu_dispatch_raytracing`) utilizing `CMD_DISPATCH_RT` (opcode `0x02`).
 
 ---
 

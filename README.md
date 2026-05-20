@@ -1,4 +1,3 @@
-<!-- HEADER -->
 <h1 align="center">⚡ SHANKHARAJ DATTA (1SHAMAY1)</h1>
 <h3 align="center">Systems & Silicon Engineer • C++ & SystemVerilog Developer • Low-Level & AI Architect</h3>
 
@@ -118,12 +117,14 @@ I design and implement **high-performance systems** across the entire stack—ra
 
 ---
 
-### 📈 ML Predictor  
-**Swarm-based machine learning modeling and analytics platform**.  
-[![ML Predictor](https://img.shields.io/badge/ML_Predictor-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/ML_Predictor)
+### 🧬 CORTEX  
+**GPU-accelerated, real-time multi-agent swarm intelligence research platform**.  
+[![CORTEX](https://img.shields.io/badge/CORTEX-000000?style=for-the-badge&logo=github)](https://github.com/1SHAMAY1/CORTEX)
 
-- **Collective Intelligence Models** – Leverages swarm intelligence to optimize model weights and parameters across distributed prediction nodes.
-- **High-Fidelity Training** – Custom neural network topologies implemented to analyze temporal trends with optimized training epochs.
+- **SEMAL Algorithm** – Implements a hybrid Social-Evolutionary Multi-Agent Learning pipeline utilizing PyTorch and CUDA for real-time neural policy training on local hardware.
+- **Cultural Policy Distillation** – Integrates local elite peer imitation with genetic algorithms (crossover and Gaussian mutation) to accelerate collective convergence and generational evolution.
+- **Batched GPU Inference** – Optimizes simulation throughput with broad-phase raycast filtering and a dynamic load-balancing daemon to sustain high GPU utilization.
+- **Cognitive Persistence** – Backed by a SQLite memory vault that automatically serializes and resumes high-fitness neural checkpoints across generations.
 
 ---
 
@@ -144,8 +145,7 @@ I design and implement **high-performance systems** across the entire stack—ra
   <img alt="Views" src="https://komarev.com/ghpvc/?username=1SHAMAY1&color=blue" />
 </p>
 
-**Top languages:**  
-C++ • SystemVerilog • C • Python • GLSL/HLSL  
+**Top languages:** C++ • SystemVerilog • C • Python • GLSL/HLSL  
 
 ---
 

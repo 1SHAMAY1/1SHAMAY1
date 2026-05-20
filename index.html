@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shankharaj Datta | Game & Software Engineer</title>
+    <title>Shankharaj Datta | Systems & Silicon Engineer</title>
     <meta name="description"
-        content="Portfolio of Shankharaj Datta - C++ Developer specializing in Unreal Engine 5, Gameplay Systems, AI & Engine Programming">
+        content="Portfolio of Shankharaj Datta - Systems & Silicon Engineer specializing in RTL Design, Bare-Metal C Drivers, High-Performance C++, and Distributed AI.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,11 +54,12 @@
                     <span class="name">Shankharaj Datta</span>
                 </h1>
                 <div class="hero-subtitle">
-                    <span class="typing-text">C++ Developer • UE5 Gameplay Systems • AI & Engine Programming</span>
+                    <span class="typing-text">RTL Design • Bare-Metal Systems • C++ Engine Dev • Distributed AI</span>
                 </div>
                 <p class="hero-description">
-                    Building high-performance systems for games and engines using modern C++,
-                    Unreal Engine, and strong mathematical foundations.
+                    Building high-performance systems across the entire stack — from synthesizable
+                    AXI4 SoC interconnects and SIMT GPU cores to custom physics engines and
+                    distributed swarm intelligence frameworks.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -80,48 +81,49 @@
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">
-                        I'm a passionate C++ developer specializing in game engine development and
-                        gameplay systems engineering. My work focuses on creating high-performance,
-                        scalable solutions for modern game development.
+                        I'm a Systems & Silicon Engineer designing performance-critical solutions
+                        across the hardware/software boundary. My work spans synthesizable RTL in
+                        SystemVerilog, bare-metal device drivers in C, high-performance ECS/physics
+                        engines in modern C++, and distributed AI frameworks.
                     </p>
                     <div class="focus-areas">
                         <h3>Focus Areas</h3>
                         <ul class="focus-list">
                             <li>
+                                <span class="focus-icon">🔌</span>
+                                <span>AXI4 SoC Interconnects & SIMT GPU RTL Design (SystemVerilog)</span>
+                            </li>
+                            <li>
+                                <span class="focus-icon">🖥️</span>
+                                <span>Bare-Metal C Device Drivers, MMIO & Hardware/Software Co-Design</span>
+                            </li>
+                            <li>
                                 <span class="focus-icon">⚙️</span>
-                                <span>Procedural + physics-driven locomotion systems</span>
+                                <span>High-Performance C++ Simulation — ECS, XPBD Solvers & Spatial Hashing</span>
                             </li>
                             <li>
-                                <span class="focus-icon">🤖</span>
-                                <span>Modular & scalable AI frameworks</span>
+                                <span class="focus-icon">🦾</span>
+                                <span>Procedural & Physics-Driven Locomotion Systems in UE5</span>
                             </li>
                             <li>
-                                <span class="focus-icon">🔧</span>
-                                <span>Engine-level C++ systems & optimization</span>
-                            </li>
-                            <li>
-                                <span class="focus-icon">🧮</span>
-                                <span>Low-level math & physics utilities for simulations</span>
-                            </li>
-                            <li>
-                                <span class="focus-icon">📐</span>
-                                <span>OOPs, DOP & ECS design patterns</span>
+                                <span class="focus-icon">🧠</span>
+                                <span>Distributed AI — Swarm Intelligence, LSTM/GRU Networks & Agent Consensus</span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Major Projects</div>
+                        <div class="stat-number">9+</div>
+                        <div class="stat-label">Projects</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">C++</div>
                         <div class="stat-label">Primary Language</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">UE5</div>
-                        <div class="stat-label">Engine Expertise</div>
+                        <div class="stat-number">RTL</div>
+                        <div class="stat-label">Silicon Design</div>
                     </div>
                 </div>
             </div>
@@ -132,7 +134,103 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+
+            <!-- ── Category 1: Low-Level Systems & Silicon ── -->
+            <h3 class="category-section-title">🔌 Low-Level Systems & Silicon (RTL &amp; Drivers)</h3>
             <div class="projects-grid">
+
+                <!-- UMA SoC Interconnect -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">🌐 UMA SoC Interconnect</h3>
+                        <span class="project-tag featured-tag">Featured</span>
+                    </div>
+                    <p class="project-description">
+                        Apple M-Series style Unified Memory Architecture SoC Interconnect in
+                        synthesizable SystemVerilog. A 2x1 AXI4 Crossbar (<code>axi4_crossbar</code>)
+                        arbitrates between CPU (M0) and GPU (M1) bus masters using fixed-priority
+                        arbitration, routing AXI transactions by ID to a 256-bit wide Unified
+                        Memory Controller (<code>axi4_uma_controller</code>).
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SystemVerilog</span>
+                        <span class="tech-tag">AXI4 Protocol</span>
+                        <span class="tech-tag">Yosys Synthesis</span>
+                        <span class="tech-tag">NoC / Crossbar</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/1SHAMAY1/UMA_SoC_Interconnect" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GPU Compute Core -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">🏎️ GPU Compute Core &amp; RTCU</h3>
+                        <span class="project-tag featured-tag">Featured</span>
+                    </div>
+                    <p class="project-description">
+                        SIMT Streaming Multiprocessor (<code>gpu_sm_core</code>) managing 32-lane
+                        warps with a 256-register Vector Register File, integrated with a
+                        synthesizable Ray-Tracing Compute Unit (<code>rtcu_core</code>). The RTCU
+                        implements hardware FSM traversals (FETCH_BVH → INT_BOX → INT_TRI) and
+                        returns hit distances and barycentrics to the SM over a 256-bit memory bus.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SystemVerilog</span>
+                        <span class="tech-tag">SIMT Architecture</span>
+                        <span class="tech-tag">BVH Traversal</span>
+                        <span class="tech-tag">Ray-Triangle ISA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/1SHAMAY1/GPU_Compute_Core" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Graphics Driver API -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">💻 Bare-Metal Graphics Driver</h3>
+                    </div>
+                    <p class="project-description">
+                        Bare-metal C device driver interfacing a CPU application with the GPU Compute
+                        Core over a Unified Memory Interconnect. Implements a 32-byte aligned circular
+                        command queue (<code>gpu_cmd_ring_t</code>, 256 entries), MMIO register control
+                        at <code>0x80000000</code>, asynchronous doorbell signaling, and zero-copy
+                        memory transfers via a shared UMA heap at <code>0x40000000</code>.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Bare-Metal</span>
+                        <span class="tech-tag">MMIO</span>
+                        <span class="tech-tag">Ring Buffer</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/1SHAMAY1/Graphics_Driver_API" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ── Category 2: Simulation & Physics Engines ── -->
+            <h3 class="category-section-title">🦾 Simulation &amp; Physics Engines</h3>
+            <div class="projects-grid">
+
                 <!-- Velox -->
                 <div class="project-card featured">
                     <div class="project-header">
@@ -140,22 +238,22 @@
                         <span class="project-tag featured-tag">Featured</span>
                     </div>
                     <p class="project-description">
-                        High-performance 2D physics engine using Data-Oriented Design (ECS) and XPBD solver.
-                        Features Spatial Hashing Grids for O(N) collision detection and portable C-API.
+                        High-performance 2D physics engine using Data-Oriented Design (ECS) and an
+                        XPBD solver. Features a custom Entity-Component-System optimized for L1/L2
+                        cache locality, a Spatial Hash Grid reducing collision complexity from
+                        O(N²) to O(N), and a real-time Raylib visualizer.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">C++17</span>
-                        <span class="tech-tag">ECS/DOP</span>
+                        <span class="tech-tag">ECS / DOD</span>
                         <span class="tech-tag">XPBD Solver</span>
                         <span class="tech-tag">Spatial Hash</span>
+                        <span class="tech-tag">Raylib</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/1SHAMAY1/Velox" target="_blank" class="project-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
                             View on GitHub
                         </a>
@@ -168,22 +266,21 @@
                         <h3 class="project-title">🦾 Character Locomotion System</h3>
                     </div>
                     <p class="project-description">
-                        Advanced UE5 locomotion plugin featuring vaulting, climbing, wall-run, mantling,
-                        and procedural animation blending for AAA-quality character movement.
+                        Advanced UE5 locomotion plugin with a modular C++ runtime pipeline for
+                        climbing, vaulting, mantling, and wall-running. Blends keyframed animations
+                        with real-time physical constraints using data-oriented components for
+                        maximum runtime performance.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Unreal Engine 5</span>
                         <span class="tech-tag">C++</span>
-                        <span class="tech-tag">Animation</span>
+                        <span class="tech-tag">Physics Blending</span>
+                        <span class="tech-tag">DOD Components</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/1SHAMAY1/Plugin-CharacterLocomotionSystem" target="_blank"
-                            class="project-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
+                        <a href="https://github.com/1SHAMAY1/Plugin-CharacterLocomotionSystem" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
                             View on GitHub
                         </a>
@@ -196,8 +293,9 @@
                         <h3 class="project-title">🎥 Enhanced Camera System</h3>
                     </div>
                     <p class="project-description">
-                        Modular cinematic & gameplay camera system for UE5 with runtime camera mode switching,
-                        smooth transitions, and customizable camera behaviors.
+                        Modular cinematic & gameplay camera system for UE5 with runtime camera mode
+                        switching, smooth transitions, and fully customizable camera behaviors
+                        designed as a plug-and-play C++ plugin.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Unreal Engine 5</span>
@@ -205,18 +303,109 @@
                         <span class="tech-tag">Cinematics</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/1SHAMAY1/Plugin-EnhancedCameraSystem" target="_blank"
-                            class="project-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
+                        <a href="https://github.com/1SHAMAY1/Plugin-EnhancedCameraSystem" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
                             View on GitHub
                         </a>
                     </div>
                 </div>
+
+            </div>
+
+            <!-- ── Category 3: Distributed AI & Deep Learning ── -->
+            <h3 class="category-section-title">🧠 Distributed AI &amp; Deep Learning</h3>
+            <div class="projects-grid">
+
+                <!-- SYNAPSE -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3 class="project-title">🕸️ SYNAPSE</h3>
+                        <span class="project-tag featured-tag">Featured</span>
+                    </div>
+                    <p class="project-description">
+                        High-performance decentralized swarm intelligence framework for multi-agent
+                        coordination. Implements autonomous agent communication layers for dynamic
+                        workload distribution, consensus/state synchronization protocols for
+                        fault-tolerant nodes, and an event-driven async pipeline for high-throughput
+                        inter-agent messaging.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Swarm Intelligence</span>
+                        <span class="tech-tag">Consensus Protocols</span>
+                        <span class="tech-tag">Async / Event-Driven</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/1SHAMAY1/SYNAPSE" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ML Predictor -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">📈 ML Predictor</h3>
+                    </div>
+                    <p class="project-description">
+                        Swarm-based machine learning modeling and analytics platform. Leverages
+                        collective swarm intelligence to optimize neural network weights across
+                        distributed prediction nodes, analyzing temporal trends with custom
+                        high-fidelity training topologies.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Swarm Optimization</span>
+                        <span class="tech-tag">Temporal ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/1SHAMAY1/ML_Predictor" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AI Battery Health -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">🔋 AI Battery Health</h3>
+                    </div>
+                    <p class="project-description">
+                        Deep learning predictive diagnostic tool for evaluating State of Health (SoH)
+                        and Remaining Useful Life (RUL) of lithium-ion cells. Employs LSTM/GRU
+                        temporal networks to model non-linear electrochemical degradation and
+                        integrates real-time thermal profiles to predict thermal runaway risks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LSTM / GRU</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Predictive Diagnostics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/1SHAMAY1/AI_Battery_Health" target="_blank" class="project-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ── Utilities ── -->
+            <h3 class="category-section-title">🛠️ C++ Utilities</h3>
+            <div class="projects-grid">
 
                 <!-- DSA Utility -->
                 <div class="project-card">
@@ -224,23 +413,19 @@
                         <h3 class="project-title">📚 DSA Utility</h3>
                     </div>
                     <p class="project-description">
-                        Comprehensive, header-only C++17 library for Data Structures and Algorithms.
-                        Features template-based implementations of AVL Trees, Graphs, and high-performance sorting
-                        algorithms.
+                        Comprehensive header-only C++17 library for Data Structures and Algorithms.
+                        Template-based implementations of AVL Trees, Graphs, and high-performance
+                        sorting algorithms with zero dynamic memory overhead.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">C++17</span>
                         <span class="tech-tag">Header-Only</span>
                         <span class="tech-tag">Templates</span>
-                        <span class="tech-tag">Education</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/1SHAMAY1/DSAUtility" target="_blank" class="project-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
                             View on GitHub
                         </a>
@@ -253,26 +438,25 @@
                         <h3 class="project-title">📘 Customizable Logger</h3>
                     </div>
                     <p class="project-description">
-                        High-performance C++ logging utility with multiple output streams, log levels,
-                        formatting options, and minimal runtime overhead.
+                        High-performance C++ logging utility with multiple output streams,
+                        ANSI color support, log levels, JSON output formatting, and
+                        minimal runtime overhead for real-time debugging.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">C++</span>
                         <span class="tech-tag">Utilities</span>
-                        <span class="tech-tag">Performance</span>
+                        <span class="tech-tag">JSON Output</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/1SHAMAY1/Customizable_Logger" target="_blank" class="project-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                </path>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
                             View on GitHub
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -283,11 +467,25 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 class="category-title">Languages</h3>
+                    <h3 class="category-title">Languages & HDLs</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">C++ (Modern & STL)</span>
+                        <span class="skill-tag">C++17 / C++20</span>
+                        <span class="skill-tag">SystemVerilog</span>
                         <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
                         <span class="skill-tag">HLSL / GLSL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Hardware & Embedded</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AXI4 Protocol</span>
+                        <span class="skill-tag">Yosys Synthesis</span>
+                        <span class="skill-tag">Riviera-PRO</span>
+                        <span class="skill-tag">Bare-Metal C</span>
+                        <span class="skill-tag">MMIO / Register Access</span>
+                        <span class="skill-tag">SoC Interconnects</span>
                     </div>
                 </div>
 
@@ -295,19 +493,19 @@
                     <h3 class="category-title">Engines & Frameworks</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Unreal Engine 5</span>
-                        <span class="skill-tag">Unreal Engine 4</span>
                         <span class="skill-tag">Raylib</span>
                         <span class="skill-tag">OpenGL</span>
+                        <span class="skill-tag">PyTorch</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <h3 class="category-title">Paradigms & Patterns</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">Data-Oriented Programming (DOP)</span>
+                        <span class="skill-tag">Data-Oriented Design (DOD)</span>
                         <span class="skill-tag">Entity-Component-System (ECS)</span>
-                        <span class="skill-tag">Design Patterns</span>
+                        <span class="skill-tag">SIMT GPU Architecture</span>
+                        <span class="skill-tag">Swarm Intelligence</span>
                         <span class="skill-tag">Multithreading</span>
                     </div>
                 </div>
@@ -319,15 +517,7 @@
                         <span class="skill-tag">CMake</span>
                         <span class="skill-tag">Premake</span>
                         <span class="skill-tag">Visual Studio</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="category-title">Graphics & UI</h3>
-                    <div class="skill-tags">
                         <span class="skill-tag">ImGui</span>
-                        <span class="skill-tag">GLFW</span>
-                        <span class="skill-tag">UMG (Unreal)</span>
                     </div>
                 </div>
             </div>
@@ -346,18 +536,22 @@
                 <div class="contact-links">
                     <a href="https://github.com/1SHAMAY1" target="_blank" class="contact-link">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
                         <span>GitHub</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/shankharaj-datta-45921a28a/" target="_blank"
-                        class="contact-link">
+                    <a href="https://www.linkedin.com/in/shankharaj-datta-45921a28a/" target="_blank" class="contact-link">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                         </svg>
                         <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:shankharajdatta2004@gmail.com" class="contact-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>Email</span>
                     </a>
                 </div>
             </div>
@@ -368,7 +562,7 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Shankharaj Datta. All rights reserved.</p>
-            <p class="footer-tagline">Built with passion for game development</p>
+            <p class="footer-tagline">Systems &bull; Silicon &bull; Software</p>
         </div>
     </footer>
 

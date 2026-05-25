@@ -138,7 +138,7 @@ I design and implement **high-performance systems** across the entire stack—ra
 
 ---
 
-# 📊 GitHub Stats & Badges (Unbreakable)
+# 📊 GitHub Stats & Badges
 
 <p align="center">
   <img alt="Followers" src="https://img.shields.io/github/followers/1SHAMAY1?label=Followers&style=social" />

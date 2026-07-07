@@ -138,7 +138,7 @@ I design and implement **high-performance systems** across the entire stack—ra
 
 ---
 
-# 📊 GitHub Stats & Badges
+# 📊 GitHub Stats & Analytics
 
 <p align="center">
   <img alt="Followers" src="https://img.shields.io/github/followers/1SHAMAY1?label=Followers&style=social" />
@@ -146,8 +146,43 @@ I design and implement **high-performance systems** across the entire stack—ra
   <img alt="Views" src="https://komarev.com/ghpvc/?username=1SHAMAY1&color=blue" />
 </p>
 
-**Top languages:** C++ • SystemVerilog • C • Python • GLSL/HLSL  
+<p align="center">
+  <b>Top languages:</b> C++ • SystemVerilog • C • Python • GLSL/HLSL
+</p>
 
+<br>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=1SHAMAY1&theme=dracula&no-frame=true&no-bg=true&margin-w=15" alt="Trophies" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=1SHAMAY1&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1SHAMAY1&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=1SHAMAY1&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" width="48%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=1SHAMAY1&bg_color=0D1117&color=00A3FF&line=00A3FF&point=FFFFFF&area=true&hide_border=true&hide_title=true" alt="Activity Graph" width="48%" />
+</p>
+
+<br>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1SHAMAY1/1SHAMAY1/output/rgb-graph.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/1SHAMAY1/1SHAMAY1/output/rgb-graph.svg">
+    <img alt="Animated Contribution Graph" src="https://raw.githubusercontent.com/1SHAMAY1/1SHAMAY1/output/rgb-graph.svg" style="max-width: 100%;">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/1SHAMAY1/1SHAMAY1/main/profile-3d-contrib/profile-night-view.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/1SHAMAY1/1SHAMAY1/main/profile-3d-contrib/profile-gitblock.svg">
+    <img alt="3D Commit Graph" src="https://raw.githubusercontent.com/1SHAMAY1/1SHAMAY1/main/profile-3d-contrib/profile-night-view.svg" style="max-width: 100%;">
+  </picture>
+</p>
 ---
 
 # 🎯 What I'm Building

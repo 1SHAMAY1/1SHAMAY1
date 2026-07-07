@@ -152,14 +152,6 @@ I design and implement **high-performance systems** across the entire stack—ra
 
 <br>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=1SHAMAY1&theme=dracula&no-frame=true&no-bg=true&margin-w=15" alt="Trophies" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=1SHAMAY1&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=1SHAMAY1&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" width="48%" />
-</p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=1SHAMAY1&theme=tokyonight&hide_border=true&background=0D1117" alt="GitHub Streak" width="48%" />

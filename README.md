@@ -191,6 +191,10 @@ I design and implement **high-performance systems** across the entire stack—ra
   </a>
 </p>
 
+<p>
+  <img alt="Profile Views" src="https://komarev.com/ghpvc/?username=1SHAMAY1&style=flat&color=0077B5&label=PROFILE+VIEWS" />
+</p>
+
 ---
 
 <h3 align="center">⭐ If you like my work, consider starring a repository!</h3>
